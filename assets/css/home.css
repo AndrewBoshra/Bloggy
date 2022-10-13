@@ -1,0 +1,60 @@
+.home-layout {
+    display: grid;
+    grid-template-areas:
+        "posts featured"
+        "posts archive";
+
+    grid-template-rows: min-content 1fr;
+    grid-template-columns: 3fr 1fr;
+    gap: 10px;
+    align-items: start;
+}
+
+.posts-section {
+    grid-area: posts;
+}
+
+.featured-posts-section {
+    grid-area: featured;
+}
+
+.archive-section {
+    grid-area: archive;
+    padding: 20px 20px;
+    border: 2px solid var(--main-color-variant);
+    border-radius: 5px;
+    background-color: var(--card-color);
+}
+
+/*
+    archive styles 
+*/
+.archive-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.archive-section li {
+    margin-bottom: 5px;
+}
+
+.archive-section a {
+    border-bottom: 1px solid;
+    text-decoration: none;
+    color: var(--text-color-variant);
+}
+
+.archive-section a:hover {
+    text-decoration: none;
+    border: none;
+    color: var(--text-color);
+}
+
+@media only screen and (max-width: 1024px) {
+    .home-layout {
+        display: block;
+    }
+    .home-layout > *{
+        margin-bottom: 30px;
+    }
+}

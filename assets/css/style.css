@@ -1,0 +1,139 @@
+@import url("home.css");
+@import url("post.css");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&display=swap');
+/*
+    General Styles for all pages
+*/
+:root {
+    --main-color-variant: #ecfaff;
+    --text-color: #333;
+    --text-color-variant: #666;
+    --card-color: white;
+}
+
+* {
+    margin: 0;
+}
+
+html {
+    font-family: 'Comfortaa', cursive;
+    background-color: #fdfdfd;
+}
+
+/*
+    General classes 
+*/
+.row {
+    max-width: 1150px;
+    margin: auto;
+}
+
+.section-title {
+    padding: 30px 0 15px 0;
+    text-transform: uppercase;
+}
+
+/*
+    Navbar and footer styling since it is in all html files 
+*/
+
+header {
+    background-color: var(--main-color-variant)
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: auto 0;
+}
+
+.nav-logo {
+    height: 60px;
+}
+
+.nav-link,
+.nav-link:visited,
+.nav-link:active {
+    margin-left: 15px;
+    text-decoration: none;
+    color: var(--text-color-variant);
+}
+
+.nav-link:hover {
+    color: var(--text-color);
+}
+
+
+footer {
+    margin-top: 20px;
+    height: 100px;
+    text-align: center;
+    padding-top: 50px;
+    background-color: rgb(37, 37, 37);
+    border: none;
+    color: #ccc;
+}
+
+/*
+    Post Style "Since post is all over the website"
+*/
+.post-container {
+    border: 2px solid var(--main-color-variant);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: var(--card-color);
+}
+
+.post-container:last-child {
+    margin-bottom: 0;
+}
+
+.post-author {
+    margin-top: 15px;
+}
+
+.post-author img {
+    border-radius: 50%;
+    height: 45px;
+    display: inline;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.post-author span {
+    font-weight: 300;
+    color: var(--text-color-variant);
+    font-size: .9em;
+}
+
+.post-summary {
+    margin-top: 10px;
+    width: 80%;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .row {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .row {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: .85em;
+    }
+}
