@@ -75,6 +75,10 @@
     height: 30px;
 }
 
+.social-links a {
+    text-decoration: none;
+}
+
 @media only screen and (max-width: 1024px) {
     .post-layout {
         display: block;
@@ -93,7 +97,7 @@
         width: 60%;
     }
 
-    .author-details-section > img {
+    .author-details-section>img {
         border-radius: 10px 10px 0 0;
         width: 100%;
         max-height: 100%;
